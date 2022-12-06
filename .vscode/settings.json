@@ -4,11 +4,20 @@
             "previewLimit": 50,
             "server": "localhost",
             "port": 5432,
-            "askForPassword": true,
             "driver": "PostgreSQL",
-            "name": "PostgreSQL 15",
-            "database": "postgres",
-            "username": "postgres"
+            "name": "dvdrental",
+            "database": "dvdrental",
+            "username": "postgres",
+            "password": "aakashojha873Qa"
         }
-    ]
+    ],
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        ".",
+        "-p",
+        "*test.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true
 }

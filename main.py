@@ -13,7 +13,19 @@ DVD = ... #this is the path to config file
 # This section contains some script parameters
 DATABASE_CONFIG = '.config\.postgres'
 SECTION = 'postgresql'
+The following is the list of the connection parameters:
+
+   database: the name of the database that you want to connect.
+
+   user: the username used to authenticate.
+   
+   password: password used to authenticate.
+
+   host: database server address e.g., localhost or an IP address.
+
+   port: the port number that defaults to 5432 if it is not provided.
 '''
+
 
 
 #put etl function
@@ -76,6 +88,7 @@ import tasks
 #https://apscheduler.readthedocs.io/en/3.x/
 
 if __name__ == '__main__':
+    # this part is needed to execute the program
     main()
 
 
