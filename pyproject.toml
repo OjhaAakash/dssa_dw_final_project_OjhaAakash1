@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kans"
+version = "0.0.1"
+authors = [
+  { name="Aakash Ojha", email="ojhaa@go.stockton.edu" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Framework :: Maellin",
+]
+dependencies = [
+    "pywin32 >= 1.0; platform_system=='MacOS'",
+    "psycopg==3.1.*",
+    "pandas==1.5.*",
+    "networkx==2.8.*"
+]
+
+[project.scripts]
+kans = "kans.cli:main"
+
+[project.urls]
+"Homepage" = "https://github.com/OjhaAakash/dssa_dw_final_project_OjhaAakash"
+"Bug Tracker" = "https://github.com/OjhaAakash/dssa_dw_final_project_OjhaAakash/issues"
+
+[tool.setuptools.packages.find]
+# where = ["dssa_dw_final_project_OjhaAakash"]
+# include = ["dssa_dw_final_project_OjhaAakash*"]
+exclude = ["dssa_dw_final_project_OjhaAakash.tests*"]
+# namespaces = false  # true by default
